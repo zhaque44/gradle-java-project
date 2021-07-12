@@ -5,3 +5,7 @@ I won’t need that pom.xml file anymore and I’ll have something much more rea
 to get everyone up and running as well configuring a SonarScanner to do periodic build checks.
 
 # Installation
+
+```
+$ brew install gradle
+```
