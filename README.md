@@ -10,3 +10,7 @@ to get everyone up and running as well configuring a SonarScanner to do periodic
 $ brew install gradle
 ```
 If you want to make sure the install was successful, check the version of Gradle you have installed by running this command:
+
+```
+$ gradle -v
+```
