@@ -26,3 +26,9 @@ Once you have Gradle installed, you can now run the initialization script in a n
 $ gradle init
 ```
 The init built-in task initializes Gradle in your repository. If you run ls in your terminal you’ll see that a wrapper folder was auto-generated in the gradle directory:
+```
+├── gradle 
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+```
