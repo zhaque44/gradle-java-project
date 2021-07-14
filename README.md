@@ -32,3 +32,11 @@ The init built-in task initializes Gradle in your repository. If you run ls in y
 │       ├── gradle-wrapper.jar
 │       └── gradle-wrapper.properties
 ```
+
+# Configuring the SonarScanner
+We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
+```
+plugins {
+    id 'org.sonarqube' version '3.0'
+}
+```
