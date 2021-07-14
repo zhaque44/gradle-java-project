@@ -10,7 +10,19 @@ to get everyone up and running as well configuring a SonarScanner to do periodic
 $ brew install gradle
 ```
 If you want to make sure the install was successful, check the version of Gradle you have installed by running this command:
-
 ```
 $ gradle -v
 ```
+the terminal output should list out the Gradle version & Groovy version on your machine. You can also run:
+```
+$ which gradle
+```
+you’ll see Gradle installed in your `/usr/local/bin` directory, which is a common place where third party software is installed on your box.
+
+# Setting up your project
+
+Once you have Gradle installed, you can now run the initialization script in a new or existing project:
+```
+$ gradle init
+```
+The init built-in task initializes Gradle in your repository. If you run ls in your terminal you’ll see that a wrapper folder was auto-generated in the gradle directory:
