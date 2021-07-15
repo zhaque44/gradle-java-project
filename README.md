@@ -36,7 +36,10 @@ A settings.gradle file was also generated, which defines the project being built
 rootProject.name = 'my-service'
 ```
 The `rootProject.name` is where you can assign the name of the service, the assignment will occur during run time of your build script. You should also see these files listed below at the root level of your project:
-
+```
+├── gradlew 
+├── gradlew.bat
+```
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
