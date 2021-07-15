@@ -1,6 +1,8 @@
 plugins {
-    id 'org.sonarqube' version '3.0'
     id 'java'
+    id 'org.sonarqube' version '3.0'
+    id 'org.springframework.boot' version 'VERSION.RELEASE'
+    id 'io.spring.dependency-management' version 'VERSION.RELEASE'
 }
 
 apply from: "https://parent.gradle"
