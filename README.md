@@ -20,7 +20,6 @@ $ which gradle
 you’ll see Gradle installed in your `/usr/local/bin` directory, which is a common place where third party software is installed on your box.
 
 # Setting up your project
-
 Once you have Gradle installed, you can now run the initialization script in a new or existing project:
 ```
 $ gradle init
@@ -32,6 +31,11 @@ The init built-in task initializes Gradle in your repository. If you run ls in y
 │       ├── gradle-wrapper.jar
 │       └── gradle-wrapper.properties
 ```
+A settings.gradle file was also generated, which defines the project being built.
+```
+rootProject.name = 'my-service'
+```
+The `rootProject.name` is where you can assign the name of the service, the assignment will occur during run time of your build script. You should also see these files listed below at the root level of your project:
 
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
