@@ -55,6 +55,10 @@ Add the standard plugins for your Spring Boot project: Spring Dependency Managem
 version = "0.0.${System.getenv('SEM_VER')}"
 ```
 Gradle allows you to declare the version as a String this isn’t mandatory, so if you don’t set the version it will just default to unspecified. A common practice in a microservices architecture is to share a common set of dependencies across all services. A custom configuration will make it easier to incorporate all of these dependencies, which can live in a specific location. You can use the built in apply function in Gradle to call your parent gradle file which probably lives in JFrog Artifactory or Nexus:
+```
+apply from: "https://pathtoparentfile.gradle"
+```
+Now add the necessary dependencies needed for your project, by declaring a dependencies object in our `build.gradle` file:
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
