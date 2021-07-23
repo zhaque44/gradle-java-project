@@ -40,6 +40,9 @@ The `rootProject.name` is where you can assign the name of the service, the assi
 ├── gradlew 
 ├── gradlew.bat
 ```
+these are wrapper files that are generated when a Gradle project is instantiated.
+# build.gradle
+When executing tasks via the command line, gradle looks for the build.gradle file which is a build execution script. This script allows you to run tasks that will make your day to day work life much easier and streamline efforts such as compiling your changes, running tests, etc., etc. To start off we’re going to want to add plugins to our build script:
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
