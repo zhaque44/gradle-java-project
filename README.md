@@ -69,7 +69,12 @@ There are two types of dependencies being add to the dependencies object above:
 - implementation: these are required dependencies needed for your project to compile, above it shows us adding PostGreSQL database to our project as an example.
 - testImplementation: these dependencies are used for compiling and running tests, but not necessarily required for running the project’s runtime code. Above we are adding the JUnit dependency needed to test the code in our project.
 
-You can document your source code by using Javadoc. By the way, this is optional but in my opinion it’s totally worth it. In your build.gradle file add a `javadoc` object and then invoke the `failOnError` method:
+You can document your source code by using Javadoc. By the way, this is optional but in my opinion it’s totally worth it. In your `build.gradle` file add the `javadoc` object and then invoke the `failOnError` method inside the object:
+```
+javadoc {
+    failOnError true
+}
+```
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
