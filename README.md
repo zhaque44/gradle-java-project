@@ -59,6 +59,12 @@ Gradle allows you to declare the version as a String this isn’t mandatory, so 
 apply from: "https://pathtoparentfile.gradle"
 ```
 Now add the necessary dependencies needed for your project, by declaring a dependencies object in our `build.gradle` file:
+```
+dependencies {
+    implementation 'org.postgresql:postgresql:42.2.8.jre7'
+    testImplementation 'junit:junit:4.13'
+}
+```
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
