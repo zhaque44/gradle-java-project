@@ -67,7 +67,7 @@ dependencies {
 ```
 There are two types of dependencies being add to the dependencies object above:
 - implementation: these are required dependencies needed for your project to compile, above it shows us adding PostGreSQL database to our project as an example.
-- testImplementation: these dependencies are used for compiling and running tests, but not necessarily required for running the project’s runtime code. Above we are adding the JUnit dependency needed to test the various endpoint in our project.
+- testImplementation: these dependencies are used for compiling and running tests, but not necessarily required for running the project’s runtime code. Above we are adding the JUnit dependency needed to test the code in our project.
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
