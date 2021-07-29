@@ -75,7 +75,7 @@ javadoc {
     failOnError true
 }
 ```
-The `failOnError` method is a boolean and will fail during compile time if your code is not well documented. If you set the boolean too false, this task will ignore `javadoc` errors.
+The `failOnError` method is a boolean and will fail during compile time if your code is not well documented. If you set the boolean too false, it will ignore `javadoc` errors.
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
