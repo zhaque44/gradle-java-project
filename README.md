@@ -76,6 +76,9 @@ javadoc {
 }
 ```
 The `failOnError` method is a boolean and will fail during compile time if your code is not well documented. If you set the boolean too false, it will ignore `javadoc` errors.
+
+Once your application is production ready & you want to start monitoring it you can use Spring Boot's Actuator's info endpoint to auto-generate information regarding your build. The build details will be published to thebuild-info.properties file. Add a `springBoot` object and pass in the `buildInfo()` method:
+
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
