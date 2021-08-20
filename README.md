@@ -83,6 +83,12 @@ springBoot {
     buildInfo()
 }
 ```
+Once you have configured the `BuildInfo` task you should be good to go. Once this task is invoked during runtime, it will output all related build information by default in `build/resources/main` directory:
+```
+*build.name:* the name of the project
+*build.version:* the version number
+*build.time:* the date/time stamp of when the project was built
+```
 # Configuring the SonarScanner
 We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
 ```
