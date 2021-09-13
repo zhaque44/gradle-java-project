@@ -95,3 +95,19 @@ plugins {
 }
 ```
 Declare a sonarqube object in your build.gradle file:
+```
+sonarqube {
+    properties {
+        property 'sonar.host.url', 'https://sonarqube.host.com'
+        property "sonar.login", ""
+        property "sonar.password", ""
+        property "sonar.projectKey", "project:service"
+        property 'sonar.projectName', 'NameOf Service'
+        property 'sonar.java.source', 11
+        property 'sonar.junit.reportPaths', 'build/results'
+        property 'encoding', 'UTF-8'
+        property 'charSet', 'UTF-8'
+        property "sonar.coverage.jacoco.xmlReportPaths", "path.xml"
+    }
+}
+```
