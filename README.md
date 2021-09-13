@@ -88,9 +88,10 @@ Once you have configured the `BuildInfo` task you should be good to go. Once thi
 - `build.version:`  the version number
 - `build.time:`  the date/time stamp of when the project was built
 # Configuring the SonarScanner
-We’re going to start by including the sonar scanner in our build.gradle file in the plugins object:
+Add the sonar scanner to your plugins object in the build.gradle file:
 ```
 plugins {
     id 'org.sonarqube' version '3.0'
 }
 ```
+Declare a sonarqube object in your build.gradle file:
