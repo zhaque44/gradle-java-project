@@ -111,3 +111,4 @@ sonarqube {
     }
 }
 ```
+The SonarScanner uses the properties defined above to authenticate and provide analysis when a Gradle task is executed via command line or CI build. I want to go over the mandatory & optional parameters I have defined above:
