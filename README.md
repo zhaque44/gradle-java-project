@@ -112,3 +112,6 @@ sonarqube {
 }
 ```
 The SonarScanner uses the properties defined above to authenticate and provide analysis when a Gradle task is executed via command line or CI build. I want to go over the mandatory & optional parameters I have defined above:
+- `sonar.host.url:` The host url is a mandatory parameter, which is the server URL
+- `sonar.projectKey:` The projectKey is a mandatory parameter, which should be a unique key. In regards to the example above, I have defined it to be either the project name or name of the Microservice.
+- `sonar.login:` The host url is a mandatory parameter, which is the server URL
